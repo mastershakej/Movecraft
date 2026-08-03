@@ -1,0 +1,32 @@
+parent: "LandShipBase"
+movecraft:
+  general:
+    name: "EasyLandShip"
+  movement:
+    speed:
+      speed: 0.32
+  constraints:
+    size:
+      min: 50
+      max: 5000
+    must_be_subcraft: false
+    block:
+      move_blocks:
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Engines"
+          min: 0.02
+          max: 100.0
+          blocks:
+            - "#eool:engines"
+  fuel:
+    burn_rate: 0.0
+    passive_burn_rate: 0.0
+  sinking:
+    lowest_possible_integrity: 65.0
+
+movecraft-eool-additions:
+  horn:
+    volume:
+      min: 0.05
+      max: 0.40
+    max_distance: 80

@@ -1,0 +1,147 @@
+parent: "AirShipBase"
+movecraft:
+  general:
+    name: "UltraAirship"
+    merge_piston_extensions: false
+  movement:
+    #chest_penalty:
+    speed:
+      modifiers:
+        blocks:
+          ==: Movecraft_NamespacedKeyToDoubleProperty
+          "#eool:heavy_armor": -10.0
+          #oldschool armor is 50% less heavy
+          "#eool:oldschool_armor": -5.0
+          #Firebrakes share the same weight
+          "#eool:fire_brakes": -5.0
+          #super armor is 50% heavier
+          "#eool:super_armor": -15.0
+          #Munitions, dispensers, droppers, hoppers are 25% heavier than heavy armor
+          "#eool:munitions": -25.0
+          "minecraft:dispenser": -12.5
+          "minecraft:dropper": -6.25
+          "minecraft:hopper": -3.125
+          #If the ship is at least 30% hull block, it will have full speed
+          "#eool:light_armor": 23.33
+          #Engines give speed too, but not a lot (75% of what a hull block gives)
+          "#eool:engines": 17.5
+          #Decorative heads, cause why not?
+          "#minecraft:heads": 13.125
+    cruise:
+      skip_blocks: 15
+      vert_skip_blocks: 3
+  constraints:
+    size:
+      max: 120000
+      min: 59000
+    movement:
+      height_limit:
+        min: -30
+        max: 200
+      max_ground_distance: 200
+    block:
+      # Difference to airship: Limit 1% super armor to detection blocks, flyblocks shall have a allowance of 4%
+      flyblocks:
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Fleep"
+          min: 50.0
+          max: 100.0
+          blocks:
+            - "#eool:flyblocks"
+            - "#eool:fire_brakes"
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Armor"
+          min: 0.0
+          max: 40.0
+          blocks:
+            - "#eool:heavy_armor"
+            - "#eool:super_armor"
+            - "#eool:oldschool_armor"
+            - "minecraft:dispenser"
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Guns"
+          min: 0.0
+          max: 5.0
+          blocks:
+            - "minecraft:dispenser"
+            - "minecraft:dropper"
+            - "minecraft:hopper"
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Super armor"
+          min: 0.0
+          max: 4.0
+          blocks:
+            - "#minecraft:anvil"
+            - "#eool:super_armor"
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Water"
+          min: 0.0
+          max: 5.0
+          blocks:
+            - "minecraft:water"
+            - "minecraft:lava"
+      detection_blocks:
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Wooden flyblocks"
+          min: 0.0
+          max: 45.0
+          blocks:
+            - "#eool:wooden_flyblocks"
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Trapdoor flyblocks"
+          min: 0.0
+          max: 20.0
+          blocks:
+            - "#eool:trapdoor_flyblocks"
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Firebrakes"
+          min: 0.0
+          max: 5.0
+          blocks:
+            - "#eool:fire_brakes"
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Chests"
+          min: 0.0
+          max: 1.0
+          blocks:
+            - "#minecraft:chests"
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Furnaces"
+          min: 0.0
+          max: 200
+          blocks:
+            - "#minecraft:smelter"
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Soulsand"
+          min: 0.0
+          max: 0.5
+          blocks:
+            - "minecraft:soul_sand"
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Super armor"
+          min: 0.0
+          max: 1.0
+          blocks:
+            - "#minecraft:anvil"
+            - "#eool:super_armor"
+  sinking:
+    #Old sinkpercent!
+    constraint_intolerance: 100.0
+    #Old overall sinkpercent!
+    lowest_possible_integrity: 60.0
+    pretty:
+      disintegration:
+        min: 40
+        max: 80
+      explosion:
+        min: 24
+        max: 48
+movecraft-eool-additions:
+  #BlastPowerOverride
+  tnt_blast_power_override: 5.0
+  #Sounds
+  horn:
+    volume:
+      min: 0.5
+      max: 2.0
+    max_distance: 400

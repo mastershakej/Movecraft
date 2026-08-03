@@ -1,0 +1,34 @@
+parent: "AirShipBase"
+movecraft:
+  general:
+    name: "BigAirship"
+  movement:
+    cruise:
+      skip_blocks: 9
+      vert_speed: 0.75
+  constraints:
+    size:
+      max: 40000
+      min: 19000
+    movement:
+      height_limit:
+        min: -10
+        max: 300
+  sinking:
+    #Old sinkpercent!
+    constraint_intolerance: 100.0
+    #Old overall sinkpercent!
+    lowest_possible_integrity: 70.0
+    pretty:
+      disintegration:
+        min: 10
+        max: 20
+      explosion:
+        min: 8
+        max: 16
+movecraft-eool-additions:
+  #Sounds
+  horn:
+    volume:
+      min: 0.2
+    max_distance: 200

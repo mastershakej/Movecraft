@@ -1,0 +1,30 @@
+parent: "AirShipBase"
+movecraft:
+  general:
+    name: "EasyAirShip"
+  constraints:
+    size:
+      min: 100
+      max: 5000
+    must_be_subcraft: false
+    block:
+      flyblocks: []
+      detection_blocks: []
+      move_blocks:
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Engines"
+          min: 0.02
+          max: 100.0
+          blocks:
+            - "#eool:engines"
+  fuel:
+    burn_rate: 0.0
+    passive_burn_rate: 0.0
+  sinking:
+    lowest_possible_integrity: 90.0
+
+movecraft-eool-additions:
+  horn:
+    volume:
+      min: 0.05
+    max_distance: 60

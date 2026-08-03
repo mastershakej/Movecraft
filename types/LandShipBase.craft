@@ -1,0 +1,101 @@
+parent: ""
+movecraft:
+  general:
+    name: "LandShipBase"
+    block:
+      allowed:
+        - "#minecraft:mineable/pickaxe"
+        - "#minecraft:mineable/axe"
+        - "#minecraft:mineable/shovel"
+        - "#minecraft:planks"
+        - "#minecraft:stairs"
+        - "#minecraft:slabs"
+        - "#minecraft:walls"
+        - "#minecraft:doors"
+        - "#minecraft:trapdoors"
+        - "#minecraft:fences"
+        - "#minecraft:fence_gates"
+        - "#minecraft:smelter"
+        - "minecraft:glass"
+        - "minecraft:glass_pane"
+        - "minecraft:iron_block"
+        - "minecraft:redstone_block"
+      forbidden:
+        - "minecraft:bedrock"
+    can_switch_world: false
+    can_be_named: true
+    rotate_at_midpoint: true
+
+  movement:
+    speed:
+      speed: 0.35
+    cruise:
+      enabled: false
+    can_direct_control: true
+    entities:
+      enabled: true
+      only_players: false
+    gravity:
+      enabled: false
+      incline_distance: -1
+      drop_distance: -1
+    passthrough_blocks:
+      - "minecraft:air"
+      - "minecraft:cave_air"
+      - "minecraft:tall_grass"
+      - "minecraft:short_grass"
+      - "minecraft:snow"
+      - "minecraft:vine"
+      - "minecraft:water"
+      - "minecraft:bubble_column"
+
+  constraints:
+    size:
+      min: 100
+      max: 20000
+    allow_remote_sign: true
+    must_be_subcraft: true
+    can_be_subcraft: false
+    movement:
+      allow_vertical: false
+      allow_horizontal: true
+      static_move:
+        enabled: false
+        max: 50
+      height_limit:
+        min: 0
+        max: 140
+      max_ground_distance: 2
+      allow_vertical_takeoff_and_landing: false
+
+  static_water_level: 0
+
+  fuel:
+    burn_rate: 1.0
+    furnace_visualization: true
+    passive_burn_rate: 0.25
+    types:
+      ==: Movecraft_NamespacedKeyToDoubleProperty
+      "minecraft:coal_block": 80
+      "minecraft:coal": 8
+      "minecraft:charcoal": 8
+
+  sinking:
+    constraint_intolerance: 100.0
+    lowest_possible_integrity: 70.0
+    sink_rate_ticks: 20
+    keep_moving: false
+    sink_on_out_of_fuel: false
+    smoke: 0
+    explosion:
+      strength: 0.0
+      incendiary: false
+
+movecraft-bridges:
+  allow_bridge_signs: true
+
+movecraft-combat:
+  allow_aa_director_sign: false
+  allow_arrow_director_sign: false
+  allow_cannon_director_sign: false
+

@@ -1,0 +1,120 @@
+parent: ""
+movecraft:
+  general:
+    name: "SeaShipBase"
+    block:
+      allowed:
+        - "#minecraft:planks"
+        - "#minecraft:logs"
+        - "#minecraft:stairs"
+        - "#minecraft:slabs"
+        - "#minecraft:walls"
+        - "#minecraft:doors"
+        - "#minecraft:trapdoors"
+        - "#minecraft:fences"
+        - "#minecraft:fence_gates"
+        - "#minecraft:smelter"
+        - "minecraft:glass"
+        - "minecraft:glass_pane"
+        - "minecraft:iron_block"
+        - "minecraft:dispenser"
+        - "minecraft:dropper"
+        - "minecraft:hopper"
+      forbidden:
+        - "minecraft:bedrock"
+    can_switch_world: true
+    can_be_named: true
+    rotate_at_midpoint: true
+
+  movement:
+    speed:
+      speed: 0.50
+      half_when_underwater: true
+    cruise:
+      enabled: true
+      skip_blocks: 5
+      vert_skip_blocks: 1
+      speed: 0.02
+      vert_speed: 0.12
+    can_direct_control: false
+    entities:
+      enabled: true
+      only_players: false
+    gravity:
+      enabled: false
+      incline_distance: -1
+      drop_distance: -1
+    passthrough_blocks:
+      - "minecraft:water"
+      - "minecraft:bubble_column"
+      - "minecraft:air"
+      - "minecraft:cave_air"
+
+  constraints:
+    size:
+      min: 300
+      max: 30000
+    buoyancy:
+      enabled: true
+      base_lift_per_block: 0.1
+      min_net_lift: 0.0
+      block_lift_modifiers:
+        ==: Movecraft_NamespacedKeyToDoubleProperty
+        "minecraft:water": 1.1
+        "#minecraft:planks": 0.5
+        "#minecraft:logs": 0.7
+        "#minecraft:slabs": 0.3
+        "#minecraft:stairs": 0.3
+        "minecraft:glass": -0.2
+        "minecraft:glass_pane": -0.05
+        "minecraft:iron_block": -1.8
+        "minecraft:dispenser": -1.0
+        "minecraft:dropper": -0.9
+        "minecraft:hopper": -1.2
+    require_water_contact: true
+    allow_remote_sign: true
+    must_be_subcraft: true
+    can_be_subcraft: false
+    movement:
+      allow_vertical: true
+      allow_horizontal: true
+      static_move:
+        enabled: false
+        max: 100
+      height_limit:
+        min: 45
+        max: 90
+      max_ground_distance: 40
+      allow_vertical_takeoff_and_landing: false
+
+  static_water_level: 62
+
+  fuel:
+    burn_rate: 1.0
+    furnace_visualization: true
+    passive_burn_rate: 0.25
+    types:
+      ==: Movecraft_NamespacedKeyToDoubleProperty
+      "minecraft:coal_block": 80
+      "minecraft:coal": 8
+      "minecraft:charcoal": 8
+
+  sinking:
+    constraint_intolerance: 100.0
+    lowest_possible_integrity: 75.0
+    sink_rate_ticks: 20
+    keep_moving: true
+    sink_on_out_of_fuel: false
+    smoke: 1
+    explosion:
+      strength: 0.0
+      incendiary: false
+
+movecraft-bridges:
+  allow_bridge_signs: true
+
+movecraft-combat:
+  allow_aa_director_sign: true
+  allow_arrow_director_sign: true
+  allow_cannon_director_sign: true
+

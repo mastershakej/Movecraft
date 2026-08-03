@@ -1,0 +1,17 @@
+parent: "LandShipBase"
+movecraft:
+  general:
+    name: "Train"
+  movement:
+    speed:
+      speed: 0.38
+    cruise:
+      enabled: false
+  constraints:
+    size:
+      min: 300
+      max: 12000
+    must_be_subcraft: false
+  sinking:
+    lowest_possible_integrity: 68.0
+

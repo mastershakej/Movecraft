@@ -1,0 +1,28 @@
+parent: "AirShipBase"
+movecraft:
+  general:
+    name: "SmallAirship"
+  movement:
+    cruise:
+      skip_blocks: 6
+      vert_speed: 0.35
+  constraints:
+    size:
+      max: 9000
+      min: 3000
+  sinking:
+    constraint_intolerance: 100.0
+    lowest_possible_integrity: 85.0
+    pretty:
+      disintegration:
+        min: 3
+        max: 6
+      explosion:
+        min: 2
+        max: 4
+movecraft-eool-additions:
+  horn:
+    volume:
+      min: 0.05
+    max_distance: 75
+

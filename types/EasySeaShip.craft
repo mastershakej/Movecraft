@@ -1,0 +1,36 @@
+parent: "SeaShipBase"
+movecraft:
+  general:
+    name: "EasySeaShip"
+  movement:
+    speed:
+      speed: 0.42
+    cruise:
+      skip_blocks: 4
+      speed: 0.018
+      vert_speed: 0.08
+  constraints:
+    size:
+      min: 100
+      max: 10000
+    must_be_subcraft: false
+    block:
+      move_blocks:
+        - ==: Movecraft_RequiredBlockEntry
+          displayName: "Engines"
+          min: 0.01
+          max: 100.0
+          blocks:
+            - "#eool:engines"
+  fuel:
+    burn_rate: 0.0
+    passive_burn_rate: 0.0
+  sinking:
+    lowest_possible_integrity: 70.0
+
+movecraft-eool-additions:
+  horn:
+    volume:
+      min: 0.08
+      max: 0.50
+    max_distance: 100

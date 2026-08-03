@@ -1,0 +1,17 @@
+parent: "LandShipBase"
+movecraft:
+  general:
+    name: "LandYacht"
+  movement:
+    speed:
+      speed: 0.34
+    cruise:
+      enabled: false
+  constraints:
+    size:
+      min: 400
+      max: 15000
+    must_be_subcraft: false
+  sinking:
+    lowest_possible_integrity: 74.0
+

@@ -1,0 +1,17 @@
+parent: "LandShipBase"
+movecraft:
+  general:
+    name: "Tank"
+  movement:
+    speed:
+      speed: 0.26
+    cruise:
+      enabled: false
+  constraints:
+    size:
+      min: 200
+      max: 8000
+    must_be_subcraft: false
+  sinking:
+    lowest_possible_integrity: 72.0
+    

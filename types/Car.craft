@@ -1,0 +1,17 @@
+parent: "LandShipBase"
+movecraft:
+  general:
+    name: "Car"
+  movement:
+    speed:
+      speed: 0.30
+    cruise:
+      enabled: false
+  constraints:
+    size:
+      min: 100
+      max: 4000
+    must_be_subcraft: false
+  sinking:
+    lowest_possible_integrity: 65.0
+
