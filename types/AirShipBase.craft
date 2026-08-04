@@ -81,21 +81,8 @@ movecraft:
       drop_distance: -8
     controller:
       rotation:
-        #==: Movecraft_DefaultRotationController
-        #TurningEnabled: true
-        ==: TTE_SteeringWheelRotationController
+        ==: Movecraft_DefaultRotationController
         TurningEnabled: true
-        HelmStep: 5.0
-        MaxHelmAngle: 16.0
-        RequireShiftToTurn: true
-        AllowStaticTurn: true
-        #==: TTE_BankingRotationController
-        #TurningEnabled: true
-        #HelmStep: 15.0
-        #MaxHelmAngle: 45.0
-        #RequireShiftToTurn: true
-        #AllowStaticTurn: true
-        #StopTurningAfterFirstTurn: true
   teleport:
     enabled: false
     #disabled_destination_worlds:

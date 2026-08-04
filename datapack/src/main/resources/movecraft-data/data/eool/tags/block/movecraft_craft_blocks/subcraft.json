@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:logs",
+    "#minecraft:planks",
+    "#minecraft:slabs",
+    "#minecraft:stairs",
+    "#minecraft:wool",
+    "#minecraft:wool_carpets",
+    "#minecraft:concrete",
+    "#minecraft:glass",
+    "#minecraft:glass_panes",
+    "minecraft:iron_block",
+    "minecraft:gold_block",
+    "minecraft:stone",
+    "minecraft:stone_bricks",
+    "minecraft:bricks",
+    "minecraft:chest",
+    "minecraft:furnace",
+    "minecraft:dispenser",
+    "minecraft:dropper",
+    "minecraft:hopper",
+    "minecraft:redstone_block",
+    "minecraft:piston",
+    "minecraft:sticky_piston",
+    "minecraft:glass",
+    "minecraft:glass_pane",
+    "minecraft:iron_bars"
+  ]
+}
