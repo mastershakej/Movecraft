@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:planks",
+    "#minecraft:logs",
+    "#minecraft:slabs",
+    "#minecraft:stairs",
+    "#minecraft:wool",
+    "#minecraft:wool_carpets",
+    "minecraft:glass",
+    "minecraft:glass_pane",
+    "minecraft:chest",
+    "minecraft:crafting_table",
+    "minecraft:furnace",
+    "minecraft:iron_block",
+    "minecraft:iron_bars",
+    "minecraft:torch",
+    "minecraft:lantern",
+    "minecraft:ladder"
+  ]
+}

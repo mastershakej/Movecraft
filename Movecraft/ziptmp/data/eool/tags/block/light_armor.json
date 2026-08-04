@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:logs",
+    "#minecraft:planks",
+    "#minecraft:slabs",
+    "#minecraft:stairs",
+    "#minecraft:wool",
+    "#minecraft:concrete",
+    "minecraft:terracotta",
+    "minecraft:stone",
+    "minecraft:cobblestone",
+    "minecraft:bricks"
+  ]
+}
