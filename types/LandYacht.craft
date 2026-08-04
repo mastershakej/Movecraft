@@ -1,3 +1,34 @@
+name: "LandYacht"
+maxSize: 15000
+minSize: 400
+allowedBlocks:
+  - "#mineable/pickaxe"
+  - "#mineable/axe"
+  - "#mineable/shovel"
+  - "#planks"
+  - "#stairs"
+  - "#slabs"
+  - "#walls"
+  - "#doors"
+  - "#trapdoors"
+  - "#fences"
+  - "#fence_gates"
+  - "furnace"
+  - "blast_furnace"
+  - "smoker"
+  - "glass"
+  - "glass_pane"
+  - "iron_block"
+  - "redstone_block"
+forbiddenBlocks:
+  - "bedrock"
+canCruise: false
+canFly: false
+rotateAtMidpoint: true
+canSwitchWorld: false
+canBeNamed: true
+canDirectControl: true
+speed: 0.35
 parent: "LandShipBase"
 movecraft:
   general:

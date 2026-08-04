@@ -1,3 +1,34 @@
+name: "SailShip"
+maxSize: 18000
+minSize: 300
+allowedBlocks:
+  - "#planks"
+  - "#logs"
+  - "#stairs"
+  - "#slabs"
+  - "#walls"
+  - "#doors"
+  - "#trapdoors"
+  - "#fences"
+  - "#fence_gates"
+  - "furnace"
+  - "blast_furnace"
+  - "smoker"
+  - "glass"
+  - "glass_pane"
+  - "iron_block"
+  - "dispenser"
+  - "dropper"
+  - "hopper"
+forbiddenBlocks:
+  - "bedrock"
+canCruise: true
+canFly: false
+rotateAtMidpoint: true
+canSwitchWorld: true
+canBeNamed: true
+canDirectControl: true
+speed: 0.5
 parent: "SeaShipBase"
 movecraft:
   general:

@@ -1,3 +1,19 @@
+name: "AirShipBase"
+maxSize: 200000
+minSize: 100
+allowedBlocks:
+  - "#eool:movecraft_craft_blocks/airship"
+  - "#eool:movecraft_craft_blocks/subcraft"
+  - "#eool:movecraft_craft_blocks/skiff"
+forbiddenBlocks:
+  - "bedrock"
+canCruise: true
+canFly: true
+rotateAtMidpoint: true
+canSwitchWorld: true
+canBeNamed: true
+canDirectControl: true
+speed: 1
 parent: ""
 movecraft:
   general:
@@ -71,7 +87,7 @@ movecraft:
         MaxVolume: 2.0
         MinPitch: 1.0
         MaxPitch: 1.0
-    can_direct_control: false
+    can_direct_control: true
     entities:
       enabled: true
       only_players: false

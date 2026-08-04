@@ -1,3 +1,19 @@
+name: "SmallAirship"
+maxSize: 9000
+minSize: 3000
+allowedBlocks:
+  - "#eool:movecraft_craft_blocks/airship"
+  - "#eool:movecraft_craft_blocks/subcraft"
+  - "#eool:movecraft_craft_blocks/skiff"
+forbiddenBlocks:
+  - "bedrock"
+canCruise: true
+canFly: true
+rotateAtMidpoint: true
+canSwitchWorld: true
+canBeNamed: true
+canDirectControl: true
+speed: 1
 parent: "AirShipBase"
 movecraft:
   general:

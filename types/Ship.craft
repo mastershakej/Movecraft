@@ -1,7 +1,38 @@
+name: "Ship"
+maxSize: 35000
+minSize: 500
+allowedBlocks:
+  - "#planks"
+  - "#logs"
+  - "#stairs"
+  - "#slabs"
+  - "#walls"
+  - "#doors"
+  - "#trapdoors"
+  - "#fences"
+  - "#fence_gates"
+  - "furnace"
+  - "blast_furnace"
+  - "smoker"
+  - "glass"
+  - "glass_pane"
+  - "iron_block"
+  - "dispenser"
+  - "dropper"
+  - "hopper"
+forbiddenBlocks:
+  - "bedrock"
+canCruise: true
+canFly: false
+rotateAtMidpoint: true
+canSwitchWorld: true
+canBeNamed: true
+canDirectControl: true
+speed: 0.5
 parent: "SeaShipBase"
 movecraft:
   general:
-    name: "PowerShip"
+    name: "Ship"
   movement:
     speed:
       speed: 0.62

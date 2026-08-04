@@ -1,7 +1,23 @@
+name: "MegaAirship"
+maxSize: 120000
+minSize: 59000
+allowedBlocks:
+  - "#eool:movecraft_craft_blocks/airship"
+  - "#eool:movecraft_craft_blocks/subcraft"
+  - "#eool:movecraft_craft_blocks/skiff"
+forbiddenBlocks:
+  - "bedrock"
+canCruise: true
+canFly: true
+rotateAtMidpoint: true
+canSwitchWorld: true
+canBeNamed: true
+canDirectControl: true
+speed: 1
 parent: "AirShipBase"
 movecraft:
   general:
-    name: "UltraAirship"
+    name: "MegaAirship"
     merge_piston_extensions: false
   movement:
     #chest_penalty:
